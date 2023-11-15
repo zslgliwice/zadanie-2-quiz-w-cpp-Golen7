@@ -9,22 +9,23 @@ string odp;
 
 int main()
 {
-    //https://cpp0x.pl/kursy/Kurs-WinAPI-C++/Roznosci/Kolory-w-konsoli/374
-    HANDLE uchwyt = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(uchwyt, 12);
     cout << "\aPodaj imie: ";
     cin >> imie;
     int pkt = 0;
 
-    system("cls");
-    cout<< "3";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2";
-    Sleep(1000);
-    system("cls");
-    cout<< "3..2..1..";
-    Sleep(1000);
+    int i = 0;
+    cout<<"Ladowanie";
+    while (i<2){
+        i++;
+        Sleep(1);
+        cout<<"."<<flush;
+        Sleep(1);
+        cout<<"."<<flush;
+        Sleep(1);
+        cout<<"."<<flush;
+        Sleep(1);
+        cout << "\b\b\b   \b\b\b"<<flush;
+    }
     system("cls");
 
     cout << imie << " witaj w tescie z programowania\n";
