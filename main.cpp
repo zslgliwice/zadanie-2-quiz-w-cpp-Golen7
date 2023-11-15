@@ -28,7 +28,7 @@ int main()
     }
     system("cls");
 
-    cout << imie << " witaj w tescie z programowania\n";
+    cout << imie << "Zapraszam do krotkiego testu\n";
 
     cout << "Co to jest C++?"<<endl;
     cout << "a) Piosenkarka"<<endl;
